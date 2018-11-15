@@ -97,6 +97,7 @@ transition(css-name)
 							color #FFFFFF
 .jarallax
 	height calc(100vh - 120px)
+	padding 20px
 	&.height
 		height 100%
 	.jm-contenido--jarallax
@@ -169,9 +170,10 @@ transition(css-name)
 		color #000000 !important
 .jm-grid
 	display grid
-	grid-column-gap 20px
+	grid-gap 20px
+	justify-content center
 	&.jm-grid--release
-		grid-template-columns repeat(4, 200px)
+		grid-template-columns repeat(auto-fit, 200px)
 footer
 	background-color #2E2E2E
 	color #FFFFFF
@@ -197,3 +199,17 @@ footer
 ::-webkit-scrollbar-thumb
 	background-color #DDDFE2
 	border-radius 10px
+@media (max-width : 7680px)
+	.jarallax
+		height 100%
+@media (max-width : 640px)
+	.jarallax
+		height 100%
+		.jm-contenido--jarallax
+			.jm-text--parallax
+				h2
+					font-size 36px
+					line-height 40px
+				p
+					font-size 20px
+					line-height 28px

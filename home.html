@@ -5,7 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="public/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
 	<link rel="stylesheet" type="text/css" href="public/plugins/mdl/material.min.css">
-	<link rel="stylesheet" type="text/css" href="public/toastr/toastr.css">
+	<link rel="stylesheet" type="text/css" href="public/plugins/toaster/toastr.css">
+	<link rel="stylesheet" type="text/css" href="public/plugins/jarallax/dist/jarallax.css">
 	<link rel="stylesheet" type="text/css" href="public/fonts/material-icons.css">
 	<link rel="stylesheet" type="text/css" href="public/fonts/roboto.css">
 	<link rel="stylesheet" type="text/css" href="public/css/m-p.min.css">
@@ -46,10 +47,10 @@
 			</div>
 	  	</div>
 	</nav>
-	<section class="jm-section">
+	<section>
 		<div class="jarallax">
 			<img class="jarallax-img" src="public/img/fondo/fondo1.jpg" alt="">
-			<div class="jm-contenido--jarallax">
+			<div class="jm-contenido--jarallax scrollflow -slide-top -opacity jm-flex">
 				<div class="jm-text--parallax">
 					<h2>Our Vision and Philosophy</h2>
 					<p>At PJP Eye Ltd., our corporate vision and philosophy is based on the ancient Chinese proverb about water. It reads:</p>
@@ -60,45 +61,30 @@
 				</div>
 			</div>
 		</div>
+	<section>
+	<section>
 		<div class="jarallax">
 			<img class="jarallax-img" src="public/img/fondo/fondo2.jpg" alt="">
-			<div class="jm-contenido--jarallax">
+			<div class="jm-contenido--jarallax scrollflow -slide-top -opacity jm-flex">
 				<div class="jm-text--parallax">
-					<h2>Our Vision and Philosophy</h2>
-					<p>At PJP Eye Ltd., our corporate vision and philosophy is based on the ancient Chinese proverb about water. It reads:</p>
-					<span>Water runs freely. No barriers hinder its force.</span>
-					<span>It cleanses imperfections in its natural flow from trickling water drop, to streams and rivers and oceans.</span>
-					<span>Whatever shape water takes, it is true to its original integrity.</span>
-					<span>Our corporate aim is to realize an ecologically sustainable world by providing electrical energy that flows as freely as water. </span>
-				</div>
-				<div class="jm-text--parallax">
-					<h2>Our Vision and Philosophy</h2>
-					<p>At PJP Eye Ltd., our corporate vision and philosophy is based on the ancient Chinese proverb about water. It reads:</p>
-					<span>Water runs freely. No barriers hinder its force.</span>
-					<span>It cleanses imperfections in its natural flow from trickling water drop, to streams and rivers and oceans.</span>
-					<span>Whatever shape water takes, it is true to its original integrity.</span>
-					<span>Our corporate aim is to realize an ecologically sustainable world by providing electrical energy that flows as freely as water. </span>
-				</div>
-				<div class="jm-text--parallax">
-					<h2>Our Vision and Philosophy</h2>
-					<p>At PJP Eye Ltd., our corporate vision and philosophy is based on the ancient Chinese proverb about water. It reads:</p>
-					<span>Water runs freely. No barriers hinder its force.</span>
-					<span>It cleanses imperfections in its natural flow from trickling water drop, to streams and rivers and oceans.</span>
-					<span>Whatever shape water takes, it is true to its original integrity.</span>
-					<span>Our corporate aim is to realize an ecologically sustainable world by providing electrical energy that flows as freely as water. </span>
-				</div>
-				<div class="jm-text--parallax">
-					<h2>Our Vision and Philosophy</h2>
-					<p>At PJP Eye Ltd., our corporate vision and philosophy is based on the ancient Chinese proverb about water. It reads:</p>
-					<span>Water runs freely. No barriers hinder its force.</span>
-					<span>It cleanses imperfections in its natural flow from trickling water drop, to streams and rivers and oceans.</span>
-					<span>Whatever shape water takes, it is true to its original integrity.</span>
-					<span>Our corporate aim is to realize an ecologically sustainable world by providing electrical energy that flows as freely as water. </span>
+					<h2>Our Mission</h2>
+					<p>PJP Eye is an energy solution company that provides green energy solutions to our customers worldwide.</p>
+					<p>Our research institute works in collaboration with global partners to update the safety, long durability and peak functionality of our Cambria Eye carbon battery.</p>
+					<p>For it is our aim is to provide our clients and partners with optimal energy grids. This is our aim to make the planet greener.</p>
 				</div>
 			</div>
 		</div>
-		<div class="jm-container">
-
+	</section>
+	<section>
+		<div class="jarallax">
+			<img class="jarallax-img" src="public/img/fondo/fondo1.jpg" alt="">
+			<div class="jm-contenido--jarallax scrollflow -slide-top -opacity jm-flex">
+				<div class="jm-text--parallax">
+					<h2>Products</h2>
+					<p>Here at PJP Eye, we produce a carbon battery as sustainable LIB (lithium ion battery) that carries the essence of green energy under the Cambria Eye© brand. Since Cambria Eye© does not include any rare metals at all, it avoid resource restriction as much as possible. Our original carbon and other materials with low environmental impact are used in cathode and anode material. Two lineup is available, both of which have tremendously high recycling capabilities.</p>
+					<button></button>
+				</div>
+			</div>
 		</div>
 	</section>
 	<footer class="jm-section">
@@ -130,5 +116,11 @@
 	<script type="text/javascript" src="public/js/js-scroll-flow.js"></script>
 	<script type="text/javascript" src="public/js/Utils.js"></script>
 	<script type="text/javascript" src="public/js/jsindex.js"></script>
+	<script type="text/javascript">
+		jarallax(document.querySelectorAll('.jarallax'));
+		$(document).ready(function( ){
+			new ScrollFlow(); 
+		});
+	</script>
 </body>
 </html>

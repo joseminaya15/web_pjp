@@ -6,3 +6,17 @@ $win.scroll(function() {
 		$("nav").removeClass("navbarcolor");
 	}
 });
+
+function openModalTeam(id){
+	var id = $('#'+id);
+	var modalTeam = $('#ModalTeam');
+	var imgModal = id.find('img').attr('src');
+	var tituloModal = id.find('h2');
+	var descripcion = id.find('p');
+	var contenido = id.find('.jm-tea__contenido');
+	modalTeam.find('img').attr('src',imgModal)
+	modalTeam.find('h2').text(tituloModal[0].innerText);
+	modalTeam.find('p').text(descripcion[0].innerText);
+	modalTeam.find('.jm-modal--texto').html(contenido[0].innerHTML)
+	modalTeam.modal('show');
+}

@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="public/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
 	<link rel="stylesheet" type="text/css" href="public/plugins/mdl/material.min.css">
+	<link rel="stylesheet" type="text/css" href="public/plugins/jarallax/dist/jarallax.css">
 	<link rel="stylesheet" type="text/css" href="public/toastr/toastr.css">
 	<link rel="stylesheet" type="text/css" href="public/fonts/material-icons.css">
 	<link rel="stylesheet" type="text/css" href="public/fonts/roboto.css">
@@ -55,9 +56,30 @@
 			</div>
 	  	</div>
 	</nav>
-	<section class="jm-section">
+	<section class="jm-section jm-gris">
 		<div class="jm-container">
-
+			<div class="jm-title">
+				<h2>Message</h2>
+				<p>Passion never make our Journey ended Perpetual.</p>
+				<span>Passion will never end our journey.</span>
+				<span>The "Eye" refers to our battery brand, "Cambria Eye".</span>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="jarallax">
+			<div class="jm-bg-black"></div>
+			<img class="jarallax-img" src="public/img/fondo/fondo1.jpg" alt="">
+			<div class="jm-contenido--jarallax scrollflow -slide-top -opacity jm-flex">
+				<div class="jm-text--parallax">
+					<h2>Our Vision and Philosophy</h2>
+					<p>At PJP Eye Ltd., our corporate vision and philosophy is based on the ancient Chinese proverb about water. It reads:</p>
+					<span>Water runs freely. No barriers hinder its force.</span>
+					<span>It cleanses imperfections in its natural flow from trickling water drop, to streams and rivers and oceans.</span>
+					<span>Whatever shape water takes, it is true to its original integrity.</span>
+					<span>Our corporate aim is to realize an ecologically sustainable world by providing electrical energy that flows as freely as water. </span>
+				</div>
+			</div>
 		</div>
 	</section>
 	<footer class="jm-section">
@@ -81,9 +103,18 @@
 	<script type="text/javascript" src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+	<script type="text/javascript" src="public/plugins/jarallax/dist/jarallax.min.js"></script>
+	<script type="text/javascript" src="public/plugins/jarallax/dist/jarallax-element.min.js"></script>
+	<script type="text/javascript" src="public/plugins/jarallax/dist/jarallax-video.min.js"></script>
 	<script type="text/javascript" src="public/plugins/mdl/material.min.js"></script>
 	<script type="text/javascript" src="public/plugins/toaster/toastr.min.js"></script>
 	<script type="text/javascript" src="public/js/Utils.js"></script>
 	<script type="text/javascript" src="public/js/jsindex.js"></script>
+	<script type="text/javascript">
+		jarallax(document.querySelectorAll('.jarallax'));
+		$(document).ready(function( ){
+			new ScrollFlow(); 
+		});
+	</script>
 </body>
 </html>

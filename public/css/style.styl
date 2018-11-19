@@ -92,6 +92,7 @@ transition(css-name)
 			&.fa-quote-right
 				margin-left 10px
 .jm-title--product
+	margin-top 20px
 	margin-bottom 30px
 	h2
 		font-size 30px
@@ -99,7 +100,7 @@ transition(css-name)
 		color $color
 		font-family $light
 		width 100%
-		max-width 260px
+		max-width 280px
 		margin auto 
 		padding 10px 0
 		border-bottom 2px solid $color
@@ -130,6 +131,30 @@ transition(css-name)
 		&.active
 			background-color $color
 			color #FFFFFF !important
+#home
+	position relative
+	height 100vh
+	.jm-text--parallax
+		transition(all)
+		transform translateY(300px)
+		opacity 0
+		&.jm-animate
+			transform translateY(0)
+			opacity 1
+.jm-fondo
+	absolute()
+	background-size cover !important
+	width 100%
+	height 100vh
+	z-index -1
+	background url(../img/fondo/fondo_home.jpg) no-repeat center center
+	&:BEFORE
+		absolute()
+		content ''
+		background-color #000000
+		z-index 0
+		height 100vh
+		opacity .6
 .navbar-default
 	background-color #000000
 	margin 0
@@ -428,6 +453,45 @@ transition(css-name)
 		width 100%
 		iframe 
 			width 100%
+.jm-product
+	width 100%
+	max-width 250px
+	padding 30px 10px
+	margin 20px auto
+	border-radius 10px
+	border 1px solid #DDDDDD
+	box-shadow 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+	img
+		height 200px
+		object-fit cover
+		max-width 250px
+	h2
+		font-size 28px
+		line-height 32px
+		font-family $bold
+		height 50px
+.jm-benefits
+	margin 30px 0
+	h2
+		color #000000
+		font-size 28px
+		line-height 32px
+		font-family $medium
+		margin auto 
+		border-bottom 1px solid #777777
+		width 100%
+		max-width 200px
+		text-align center
+.jm-benefits__contenido
+	margin 15px 0
+	h2
+		color #777777
+		font-size 24px
+		line-height 28px
+		font-family $medium
+	p
+		font-size 16px
+		line-height 20px
 .jm-table--title
 	color #777777
 	font-size 16px
@@ -514,6 +578,7 @@ transition(css-name)
 footer
 	width 100%
 	text-align center
+	position relative
 	.jm-footer
 		flexCenter()
 		.jm-footer__left

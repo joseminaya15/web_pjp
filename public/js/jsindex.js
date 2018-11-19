@@ -20,3 +20,8 @@ function openModalTeam(id){
 	modalTeam.find('.jm-modal--texto').html(contenido[0].innerHTML)
 	modalTeam.modal('show');
 }
+$( document ).ready(function(){
+	setTimeout(function(){ 
+		$('#home').find('.jm-text--parallax').addClass('jm-animate');
+	}, 1000);
+});
